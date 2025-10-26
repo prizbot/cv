@@ -64,12 +64,10 @@ def authorized_face_check(auth_img_path, test_img_path):
             plt.show()
 
             if len(good) > 10:
-                print("✅ Authorized Face Detected")
+                print(" Authorized Face Detected")
                 return
-    print("❌ Unauthorized Face")
+    print(" Unauthorized Face")
 
-
-# ---------- RUN ALL ----------
 if __name__ == "__main__":
     test_img = cv2.imread(r"D:\DL\female1.jpg")
     known_imgs = [cv2.imread(r"D:\DL\female.jpg") for _ in range(3)]
